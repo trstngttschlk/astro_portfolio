@@ -3,7 +3,8 @@ import SocialButton from "./SocialButton";
 export default function About() {
   return (
     <div>
-      <h1 className="text-5xl uppercase">Hello, I'm Tristan Gottschalk.</h1>
+      <h1>Hello, I'm Tristan Gottschalk</h1>
+      {/* className="text-5xl uppercase" */}
       <p className="text-2xl">
         A Full-Stack Software Engineer based in New York, NY
       </p>
