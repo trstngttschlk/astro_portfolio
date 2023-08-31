@@ -9,11 +9,15 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
     <link rel="icon" href="/" />
+    <title>{title}</title>
   </head>
-  <body class="text-white bg-background font-sans">
-    <main class="max-w-4xl mx-auto my-10">
+  <body class="text-white bg-background font-sans mx-5">
+    <i class="fa-solid fa-user"></i>
+    <!-- uses solid style -->
+    <i class="fa-brands fa-github-square"></i>
+    <!-- uses brand style -->
+    <main class="lg:max-w-5xl my-10 mx-auto">
       <Nav />
       <slot />
     </main>
