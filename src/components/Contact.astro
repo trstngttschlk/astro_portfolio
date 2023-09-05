@@ -1,1 +1,51 @@
-<h2 class="mt-16">Contact</h2>
+---
+import Button from "../util/Button.astro";
+Button;
+---
+
+<section>
+  <h2 class="mt-16">Contact Me</h2>
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    action="/success"
+    class="max-w-md mx-auto mt-10"
+  >
+    <div class="md:flex gap-5">
+      <div class="w-full">
+        <input
+          type="text"
+          name="name"
+          placeholder="name"
+          class="w-full border-solid border-2 border-gray-700 bg-background rounded-md pl-2"
+        />
+      </div>
+      <div class="mt-5 md:mt-0 w-full">
+        <input
+          type="email"
+          name="email"
+          placeholder="email"
+          class="w-full border-solid border-2 border-gray-700 bg-background rounded-md pl-2"
+        />
+      </div>
+    </div>
+    <div class="w-full mt-5">
+      <input
+        name="subject"
+        placeholder="subject"
+        class="w-full border-solid border-2 border-gray-700 bg-background rounded-md pl-2"
+      />
+    </div>
+    <div class="w-full mt-5">
+      <textarea
+        name="message"
+        placeholder="message"
+        class="w-full border-solid border-2 border-gray-700 bg-background rounded-md pl-2"
+      ></textarea>
+    </div>
+    <div class="flex justify-center mt-5">
+      <Button type="submit">Send</Button>
+    </div>
+  </form>
+</section>
