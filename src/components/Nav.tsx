@@ -8,7 +8,7 @@ export default function Nav() {
           </p>
         </a>
       </div>
-      <div className="flex flex-col md:flex-row">
+      {/* <div className="flex flex-col md:flex-row">
         <a
           href=""
           className="underline-offset-8 hover:underline hover:decoration-hover hover:decoration-4"
@@ -27,7 +27,7 @@ export default function Nav() {
         >
           Contact
         </a>
-      </div>
+      </div> */}
     </nav>
   );
 }
