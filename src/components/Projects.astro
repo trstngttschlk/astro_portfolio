@@ -2,19 +2,21 @@
 import Project from "./Project.astro";
 ---
 
-<h2 class="mt-20">Projects</h2>
+<h2 class="mt-16">Projects</h2>
 <div class="flex mt-5 flex-wrap lg:flex-nowrap">
   <Project
-    title="Project 1"
-    description="This is project 1 very detailed description"
+    projectName="Together"
+    projectDescription="Group Calendar MERN application for Discord communities to share and organize events."
+    languages={["react", "node", "express"]}
+  />
+  <Project
+    projectName="Project 2"
+    projectDescription="wow this is a totally different description"
+    languages={["react", "html", "css", "node"]}
+  />
+  <Project
+    projectName="Project 3"
+    projectDescription="and another description highlighting another great project"
     languages={["javascript", "html", "css"]}
-  />
-  <Project
-    title="Project 2"
-    description="wow this is a totally different description"
-  />
-  <Project
-    title="Project 3"
-    description="and another description highlighting another great project"
   />
 </div>
