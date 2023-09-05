@@ -13,14 +13,10 @@ import "../styles/global.css";
     <title>{title}</title>
   </head>
   <body class="text-white bg-background font-sans mx-5">
-    <i class="fa-solid fa-user"></i>
-    <!-- uses solid style -->
-    <i class="fa-brands fa-github-square"></i>
-    <!-- uses brand style -->
-    <main class="lg:max-w-5xl my-10 mx-auto">
+    <div class="lg:max-w-5xl my-10 mx-auto">
       <Nav />
       <slot />
-    </main>
+    </div>
     <Footer />
   </body>
 </html>
